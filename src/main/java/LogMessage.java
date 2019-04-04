@@ -8,7 +8,7 @@ public class LogMessage
         {
             machineId = message.substring(0, message.indexOf(":"));
             description = message.substring(message.indexOf(":")+1);
-            System.out.println(description);
+            
         }
 
         public boolean conainsWord(String keyword)
@@ -17,7 +17,7 @@ public class LogMessage
             {return true;}
 
             if (description.length() > keyword.length())
-            {System.out.println("in1");
+            {
                 if (description.trim().equals(keyword))
                 { return true; }
 
